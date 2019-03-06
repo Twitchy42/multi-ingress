@@ -2,7 +2,6 @@ kind: Service
 apiVersion: v1
 metadata:
   name: "ingress-nginx-{{  .Values.identifier }}"
-  namespace: "ingress-nginx-{{  .Values.identifier }}"
   labels:
     app.kubernetes.io/name: "ingress-nginx-{{  .Values.identifier }}"
     app.kubernetes.io/part-of: "ingress-nginx-{{  .Values.identifier }}"
