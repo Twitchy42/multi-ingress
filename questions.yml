@@ -1,0 +1,7 @@
+questions:
+- variable: identifier
+description: "Unique tag to differentiate this ingress controller from others"
+required: true
+- variable: certificateARN
+description: "The ARN of an AWS certificate (ACM) is required for this chart"
+required: true
