@@ -2,6 +2,8 @@ questions:
 - variable: identifier
   description: "Unique tag to differentiate this ingress controller from others"
   required: true
+  type: string
 - variable: certificateARN
   description: "An Amazon ACM certificate is required for using this chart"
   required: true
+  type: string
