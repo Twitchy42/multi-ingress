@@ -223,7 +223,7 @@ spec:
             - name: POD_NAMESPACE
               valueFrom:
                 fieldRef:
-                  fieldPath: {{ .Release.Namespace }}
+                  fieldPath: metadata.namespace
           ports:
             - name: http
               containerPort: 80
