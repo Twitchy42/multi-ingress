@@ -4,6 +4,17 @@ Multi-Ingress is a chart built for deploying multiple nginx ingress controllers 
 
 This chart assumes your cluster is using AWS as its cloud provider and that you are using Amazon Certificate Manager to secure your SSL endpoints
 
+
+## Using the Chart
+
+Requirements: Cluster is using AWS as its cloud provider. An ACM (Amazon Certificate Manager) cert is already created. 
+
+FOR DEVELOPERS: To point your deployed application to use this ingress controller, you MUST add an annotation to your ingress resource in the following format: 
+`kubernetes.io/ingress.class = nginx-<the identifier you set>`
+
+Multi-Ingress will install the nginx-ingress-controller workload, create a load balancer in AWS, and set up the required configmaps and roles.
+
+
 ## Installing the Chart
 
 To install the chart with the release name `my-ingress`
